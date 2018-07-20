@@ -23,9 +23,32 @@
           <label for="player 2 name">Player 2</label>
           <input type="text" class="player 2 name" id="player" value="Enter your name">
       </form>
-      <button type="Start" name="btn">Start<style:bg-color:primary;</button>
+      <button type="Start" name="btn">Start</button>
     </div>
   </div>
+  <div class="player-container">
+      <button id="new-game" class="btn">NEW GAME </button>
+      <div class = "row">
+        <div class="col-md-6">
+          <h2>Player 1: <span id = "player1Name"></span></h2>
+            <button id="player1-roll" class="btn">Roll</button>
+            <button id="player1-hold" class="btn">Hold</button>
+          <h2 id="roll-die-1">Roll-Dice: </h2>
+          <p id="total-round-1">Total-Round: </p>
+          <p id="total-score-1">Player's Score: </p>
+        </div>
+        <div class="col-md-6">
+          <h2>Player 2: <span id = "player2Name"></span></h2>
+          <button id="player2-roll" class="btn">Roll</button>
+          <button id="player2-hold" class="btn">Hold</button>
+          <h2 id="roll-die-2">Roll-Dice:</h2>
+          <p id="total-round-2">Total-Round:</p>
+          <p id="total-score-2">Player's Score:</p>
+        </div>
+
+
+      </div>
+    </div>
 
   </body>
 </html>
