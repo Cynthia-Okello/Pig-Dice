@@ -162,7 +162,7 @@ $(document).ready(function() {
     player1 = new Player(true);
     player2 =  new Player(false);
     $(".player-console").show();
-    $(".start-menu").hide();
+    $(".start-menu").show();
 
     var player1Name = $(".player1Name").val();
     $("#player1Name").text(player1Name);
@@ -175,7 +175,7 @@ $(document).ready(function() {
 
   });
   $("button#new-game").click(function(event){
-    $(".player-console").hide();
+    $(".player-console").show();
     clearValues();
     player1.newGame();
     player2.newGame();
