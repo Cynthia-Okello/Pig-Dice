@@ -5,7 +5,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
     <title>Pig Dice</title>
   </head>
   <body>
@@ -22,16 +22,16 @@
         </ul>
   </div>
       <h3>Let's Play!</h3>
-      <form id="player1">
+      <form id="player 1">
             <div class="form-group">
-              <label for="player1name">Player 1 </label>
-              <input type="text" class="player1name" id="player1" placeholder="Enter your name">
+              <label for="player 1 name">Player 1</label>
+              <input type="text" class="player 1 name" id="player 1" value="Enter your name">
             </div>
       </form>
-      <form id="player2">
+      <form id="player 2">
         <div class="form-group">
-          <label for="player2name">Player 2</label>
-          <input type="text" class="player2name" id="player" placeholder="Enter your name">
+          <label for="player 2 name">Player 2</label>
+          <input type="text" class="player 2 name" id="player" value="Enter your name">
       </form>
       <button type="Start" name="btn">Start</button>
     </div>
@@ -39,25 +39,25 @@
 
 
   <div class="panel panel-default">
-    <div class="panel-body">
+    <div class="panel-body"></div>
     <div class="player-container">
       <button id="new-game" class="btn">NEW GAME </button>
       <div class = "row">
         <div class="col-md-6">
-          <h2>Player1: <span id = "player1Name"></span></h2>
+          <h2>Player 1: <span id = "player1Name"></span></h2>
             <button id="player1-roll" class="btn">Roll</button>
             <button id="player1-hold" class="btn">Hold</button>
-          <h2 id="die-roll-1">Dice-Roll-1: </h2>
-          <p id="round-total-1">Round-Total-1: </p>
-          <p id="total-score-1">Player's Score-1: </p>
+          <h2 id="roll-die-1">Roll-Dice:<strong id="p1Dr"></strong> </h2>
+          <p id="total-round-1">Total-Round:<strong id="p1Tr"></strong> </p>
+          <p id="total-score-1">Player's Score: <strong id="p1r"></strong> </p>
         </div>
         <div class="col-md-6">
-          <h2>Player2: <span id = "player2Name"></span></h2>
+          <h2>Player 2: <span id = "player2Name"></span></h2>
           <button id="player2-roll" class="btn">Roll</button>
           <button id="player2-hold" class="btn">Hold</button>
-          <h2 id="die-roll-2">Dice-Roll-2:</h2>
-          <p id="round-total-2">Round-Total-2:</p>
-          <p id="total-score-2">Player's Score-2:</p>
+          <h2 id="roll-die-2">Roll-Dice:<strong id="p2Dr"></strong></h2>
+          <p id="total-round-2">Total-Round: <strong id="p2Tr"></strong></p>
+          <p id="total-score-2">Player's Score: <strong id="p2r"></strong></p>
         </div>
 
 
@@ -65,8 +65,6 @@
     </div>
   </div>
 </div>
-
-
 
   </body>
 </html>
